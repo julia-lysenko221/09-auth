@@ -9,7 +9,7 @@ import css from './NotesPage.module.css';
 import NoteList from '@/components/NoteList/NoteList';
 import SearchBox from '@/components/SearchBox/SearchBox';
 import Pagination from '@/components/Pagination/Pagination';
-import { fetchNotes } from '@/lib/api';
+import { fetchNotes } from '@/lib/api/clientApi';
 import toast from 'react-hot-toast';
 import type { Note } from '@/types/note';
 import Link from 'next/link';

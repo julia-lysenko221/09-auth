@@ -1,3 +1,4 @@
+import AuthNavigation from '../AuthNavigation/AuthNavigation';
 import TagsMenu from '../TagsMenu/TagsMenu';
 import css from './Header.module.css';
 import Link from 'next/link';
@@ -12,6 +13,9 @@ const Header = async () => {
         <ul className={css.navigation}>
           <li>
             <Link href="/">Home</Link>
+          </li>
+          <li>
+            <AuthNavigation />
           </li>
           <li>
             <TagsMenu />
