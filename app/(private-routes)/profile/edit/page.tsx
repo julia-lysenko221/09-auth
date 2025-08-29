@@ -1,7 +1,7 @@
 'use client';
 
 'use client';
-import css from './ProfilePage.module.css';
+import css from './EditProfilePage.module.css';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { updateMe, getMe } from '@/lib/api/clientApi';
