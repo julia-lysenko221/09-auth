@@ -83,7 +83,7 @@ export const getMe = async () => {
 };
 
 export interface UpdateUserRequest {
-  userName?: string;
+  username?: string;
 }
 
 export const updateMe = async (data: UpdateUserRequest): Promise<User> => {
