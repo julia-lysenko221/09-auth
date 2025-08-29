@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import { useNoteDraftStore } from '@/lib/store/noteStore';
 
 import type { NoteTag, NewNoteData } from '../../types/note';
-import { createNote } from '@/lib/api';
+import { createNote } from '@/lib/api/clientApi';
 
 export default function NoteForm() {
   const queryClient = useQueryClient();

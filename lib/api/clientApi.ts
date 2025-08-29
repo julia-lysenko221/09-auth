@@ -4,20 +4,6 @@ import type { Note, NewNoteData } from '@/types/note';
 import { nextServer } from './api';
 import type { User } from '@/types/user';
 
-// interface FetchNotesParams {
-//   tag?: string;
-//   page?: number;
-//   perPage?: number;
-//   search?: string;
-// }
-
-// interface NotesResponse {
-//   data: Note[];
-//   totalPages: number;
-//   page: number;
-//   perPage: number;
-// }
-
 interface FetchNotesResponse {
   notes: Note[];
   totalPages: number;
@@ -92,6 +78,15 @@ export const checkSession = async () => {
 };
 
 export const getMe = async () => {
-  const { data } = await nextServer.get<User>('/auth/me');
+  const { data } = await nextServer.get<User>('/users/me');
   return data;
+};
+
+export interface UpdateUserRequest {
+  userName?: string;
+}
+
+export const updateMe = async (data: UpdateUserRequest): Promise<User> => {
+  const res = await nextServer.patch<User>('/users/me', data);
+  return res.data;
 };
