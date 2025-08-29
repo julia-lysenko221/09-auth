@@ -41,7 +41,7 @@ const EditProfile = () => {
         <h1 className={css.formTitle}>Edit Profile</h1>
 
         <Image
-          src="avatar"
+          src="https://ac.goit.global/fullstack/react/notehub-og-meta.jpg"
           alt="User Avatar"
           width={120}
           height={120}

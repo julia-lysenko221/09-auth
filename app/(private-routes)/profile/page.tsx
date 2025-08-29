@@ -19,7 +19,7 @@ const Profile = async () => {
         </div>
         <div className={css.avatarWrapper}>
           <Image
-            src="Avatar"
+            src="https://ac.goit.global/fullstack/react/notehub-og-meta.jpg"
             alt="User Avatar"
             width={120}
             height={120}
