@@ -40,7 +40,12 @@ const EditProfile = () => {
         <form action={handleAction} className={css.profileInfo}>
           <div className={css.usernameWrapper}>
             <label htmlFor="username">Username:</label>
-            <input id="username" type="text" className={css.input} />
+            <input
+              id="username"
+              type="text"
+              className={css.input}
+              value={user?.username}
+            />
           </div>
 
           <p>Email: {user?.email}</p>
